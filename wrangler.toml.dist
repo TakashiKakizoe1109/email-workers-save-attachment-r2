@@ -1,0 +1,10 @@
+name = "email-workers-save-attachment-r2"
+main = "src/index.ts"
+compatibility_date = "2023-10-16"
+node_compat = true
+workers_dev = true
+vars = { CHATWORK_TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", CHATWORK_ROOM = "XXXXXXXXX", RELAY_EMAILS = '["sample1@example.com", "sample2@example.com"]' }
+
+[[r2_buckets]]
+binding = "MAIL_WORKER_BUCKET"
+bucket_name = "mail-attachment"
